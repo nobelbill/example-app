@@ -1,10 +1,9 @@
 {
   "type": "app",
-  "name": "App Example",
-  "id": "app-example",
+  "name": "Nginx",
+  "id": "nginx-app",
 
   "staticRoot": "./public",
-  "module": "app",
 
   "pages": [
     {"name": "Example1", "url": "/app-example", "reqRole": "Editor"}
@@ -16,12 +15,12 @@
   },
 
   "info": {
-    "description": "Example Grafana App",
+    "description": "Official Grafana Nginx App & Dashboard bundle",
     "author": {
-      "name": "Raintank Inc.",
-      "url": "http://raintank.io"
+      "name": "Nginx Inc.",
+      "url": "http://nginx.com"
     },
-    "keywords": ["example"],
+    "keywords": ["nginx"],
     "logos": {
       "small": "img/logo_small.png",
       "large": "img/logo_large.png"
