@@ -6,12 +6,13 @@
   "staticRoot": "./public",
 
   "pages": [
-    {"name": "Example1", "url": "/app-example", "reqRole": "Editor"}
+    {"name": "Live stream", "url": "nginx/stream", "reqRole": "Editor"},
+    {"name": "Log view", "url": "nginx/log", "reqRole": "Editor"}
   ],
 
   "css": {
-    "light":  "css/plugin.dark.css",
-    "dark":   "css/plugin.light.css"
+    "dark":  "css/dark.css",
+    "light":   "css/light.css"
   },
 
   "info": {
