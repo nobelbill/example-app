@@ -14,13 +14,12 @@ define([
   });
 
   function configViewDirective() {
+    console.log('app directive func');
     return {templateUrl: 'public/plugins/nginx-app/partials/config.html'};
   }
 
   return {
-    directives: {
-      configView: configViewDirective
-    }
+    configView: configViewDirective
   };
 
 });
