@@ -3,7 +3,7 @@
   "name": "Nginx",
   "id": "nginx-app",
 
-  "staticRoot": "./public",
+  "staticRoot": ".",
 
   "pages": [
     {"name": "Live stream", "url": "nginx/stream", "reqRole": "Editor"},
@@ -12,7 +12,7 @@
 
   "css": {
     "dark":  "css/dark.css",
-    "light":   "css/light.css"
+    "light":  "css/light.css"
   },
 
   "info": {
