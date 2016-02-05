@@ -13,13 +13,16 @@ define([
       });
   });
 
-  function configViewDirective() {
-    console.log('app directive func');
-    return {templateUrl: 'public/plugins/nginx-app/partials/config.html'};
+  function NginxConfigCtrl() {
+    this.appEditCtrl.beforeUpdate = function() {
+      alert('before!');
+    };
   }
+  NginxConfigCtrl.templateUrl = 'public/plugins/nginx-app/partials/config.html';
+
 
   return {
-    configView: configViewDirective
+    ConfigCtrl: NginxConfigCtrl
   };
 
 });

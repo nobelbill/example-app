@@ -1,13 +1,16 @@
 define([
-], function(angular, app)  {
+  'app/features/panel/panel'
+], function(panel) {
 
-  function nginxPanelDirective() {
-    return {
-      template: '<grafana-panel><h2>Nginx panel</h2></grafana-panel>',
-    };
+  function NginxPanel($scope, $injector) {
+    panel.PanelCtrl.call(this, $scope, $injector);
   }
 
+  NginxPanel.template = '<h2>nginx!</h2>';
+  NginxPanel.prototype = Object.create(panel.PanelCtrl.prototype);
+  NginxPanel.prototype.constructor = NginxPanel;
+
   return {
-    panel: nginxPanelDirective,
+    PanelCtrl: NginxPanel
   };
 });
