@@ -8,7 +8,7 @@ class ExampleAppPanelCtrl extends PanelCtrl {
   }
 
 }
-ExampleAppPanelCtrl.template = '<h2 class="example-app-heading">Example app!</h2>';
+ExampleAppPanelCtrl.template = '<h2 class="example-app-heading">Nobelbill app</h2>';
 
 export {
   ExampleAppPanelCtrl as PanelCtrl
